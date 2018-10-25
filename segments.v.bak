@@ -1,0 +1,52 @@
+/*module segments(input [3:0]  hex,
+					//input    dp,
+					output  reg  [6:0]  sseg   // output active low
+						);
+
+always @ (*)
+   case(hex)
+      4'h0:  sseg = 7'b0000001;
+      4'h1:  sseg = 7'b1001111;
+      4'h2:  sseg = 7'b0010010;
+      4'h3:  sseg = 7'b0000110;
+      4'h4:  sseg = 7'b1001100;
+      4'h5:  sseg = 7'b0100100;
+      4'h6:  sseg = 7'b0100000;
+      4'h7:  sseg = 7'b0001111;
+      4'h8:  sseg = 7'b0000000;
+      4'h9:  sseg = 7'b0000100;
+      4'ha:  sseg = 7'b0001000;
+      4'hb:  sseg = 7'b1100000;
+      4'hc:  sseg = 7'b0110001;
+      4'hd:  sseg = 7'b1000010;
+      4'he:  sseg = 7'b0110000;
+      default:  sseg = 7'b0111000;   //4'hf
+  endcase
+ // sseg[7] = dp;
+  
+  endmodule */
+  
+  module segments(input [3:0] in, input enable, output reg [6:0] out);
+
+always @(*)
+	begin
+		if(enable==0)
+			out=7'b111_1111;
+		else 
+			if(enable==1)
+		case(in)
+			0: out= 7'b000_0001;
+			1: out= 7'b100_1111;
+			2: out= 7'b001_0010;
+			3: out= 7'b000_0110;
+			4: out= 7'b100_1100;
+			5: out= 7'b010_0101;
+			6: out= 7'b000_0010;
+			7: out= 7'b000_1111;
+			8: out= 7'b000_0001;
+			9: out= 7'b000_0100;
+			default: out= 7'b011_0000;
+		endcase
+	end
+
+endmodule

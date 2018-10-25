@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\FACULTATE\Anul 2\Sem 2\scoala de vara fpga\sram
+vinterfata
+Z1 !s100 `k>@Y4]=0S]1UV<7L_ENa3
+Z2 IORY6dbj4_03olCW0;VzDY3
+Z3 VSF?fABHTf=ffg]0S=eEbU3
+Z4 dE:\FACULTATE\Anul 2\Sem 2\scoala de vara fpga\sram-2
+Z5 w1530695959
+Z6 8E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/interfata.v
+Z7 FE:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/interfata.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/interfata.v|
+Z10 o-work work -O0
+Z11 !s108 1530781098.571000
+Z12 !s107 E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/interfata.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsegments
+Z13 Ik79D^LfZj`9UD[cAzGIAc3
+Z14 VRkGNVUV6a^TOY[_7oXGQa2
+R4
+Z15 w1530778017
+Z16 8E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/segments.v
+Z17 FE:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/segments.v
+L0 29
+R8
+r1
+31
+Z18 !s90 -reportprogress|300|-work|work|E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/segments.v|
+R10
+Z19 !s100 L90MRYj=RGlkJ0<Z@fEJ90
+Z20 !s108 1530781098.767000
+Z21 !s107 E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/segments.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsram
+Z22 IKmd4d?dzoWz=bLjYk>d[F0
+Z23 V>dHAfEMISLXX9Xnko8h1n3
+R4
+Z24 w1530780208
+Z25 8E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/sram.v
+Z26 FE:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/sram.v
+L0 1
+R8
+r1
+31
+Z27 !s90 -reportprogress|300|-work|work|E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/sram.v|
+R10
+!i10b 1
+Z28 !s100 3^X12^3ZSZA9_93cDVGHh1
+!s85 0
+Z29 !s108 1530781099.052000
+Z30 !s107 E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/sram.v|
+!s101 -O0
+vtest
+!i10b 1
+Z31 !s100 bS>hDHBn2`zb9ca_bk3R82
+Z32 I^BY9jjeO[5gLET;4kb9HM0
+Z33 Vk<3<[f=78GX=_HO53D;7>3
+R4
+Z34 w1530721890
+Z35 8E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/test.v
+Z36 FE:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/test.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1530781099.464000
+!s107 E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/test.v|
+Z37 !s90 -reportprogress|300|-work|work|E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/test.v|
+!s101 -O0
+R10

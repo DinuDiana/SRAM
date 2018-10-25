@@ -1,0 +1,63 @@
+module sram(input clock,					//fpga clock
+				input reset,					//initiates al 1s in all data locations, 0 active
+				output reg write_enable,			//if active (0) we can write in SRAM
+				output reg output_enable,		//if active (0) we can read from SRAM
+				output reg chip_enable,			//if active (0) we can use the chip
+				output lower_byte_ctrl, 		//selects lower bytes [0:7]
+				output upper_byte_control,	//selects upper bytes [8:15]
+				output [17:0] sram_addr,		//18 bit address
+				inout [15:0] sram_data, 	// bidirectional data bus
+				//fpga input
+				input [3:0] address,
+				input [3:0] data,
+				input write_enable_user,
+				input chip_enable_user,
+				input output_enable_user,
+				output [6:0] data_out_7_segm,		//data we read
+				output [6:0] address_7_segm,
+				output reg [17:0] address_to_display,
+				output reg [15:0] data_to_display
+				);		
+			
+//reg [17:0] address_to_display;
+//reg [15:0] data_to_display;
+			
+//scriere pt bus date
+assign sram_data = (chip_enable == 0 && write_enable == 0) ?  {data, 12'b0} : 16'bz;
+
+//scriere si citire pt bus adrese
+assign sram_addr = (chip_enable == 0 && (write_enable ==0 || output_enable == 0) ) ? {address, 14'b0} : {4'b0000, 14'b0};
+
+assign upper_byte_control=1'bz;
+assign lower_byte_ctrl=1'bz;
+
+always @ (posedge clock)
+	begin 
+		if (chip_enable_user == 0)
+			chip_enable <= 0;
+		else 
+			chip_enable <= 1;
+		
+		if (chip_enable == 0 && write_enable_user == 0)
+			write_enable <= 0;
+		else 
+			write_enable <= 1;
+			
+		if (chip_enable ==0 && output_enable_user == 0)
+			output_enable <= 0;
+		else 
+			output_enable <= 1;
+	end
+		
+always @ (*)	
+	begin
+		data_to_display = (chip_enable == 0 && output_enable == 0) ? sram_data[15:12] : 4'b1111;
+		address_to_display = (chip_enable == 0 && output_enable == 0) ? sram_addr[17:14] : 4'b1111;
+	end
+
+			
+segments afisaj_adresa (address_to_display, output_enable, address_7_segments);
+segments afisaj_date (data_to_display, output_enable, data_out_7_segments);	
+
+endmodule 		
+			

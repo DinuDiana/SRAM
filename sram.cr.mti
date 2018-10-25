@@ -1,0 +1,22 @@
+{E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/test.v} {1 {vlog -work work {E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/test.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module test
+
+Top level modules:
+	test
+
+} {} {}} {E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/segments.v} {1 {vlog -work work {E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/segments.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module segments
+
+Top level modules:
+	segments
+
+} {} {}} {E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/interfata.v} {1 {vlog -work work {E:/FACULTATE/Anul 2/Sem 2/scoala de vara fpga/sram-2/interfata.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module interfata
+
+Top level modules:
+	interfata
+
+} {} {}}
